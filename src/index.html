@@ -4,6 +4,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
+        <style>
+            button{
+                cursor: pointer;
+            }
+           .hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+        </style>
         <title>9-to-9 School</title>
     </head>
     <body>
@@ -271,8 +284,10 @@
         <!-- events and activities -->
         <main class="px-10 py-15">
 
-            <div class="flex flex-col md:flex-row gap-2 items-center justify-between">
-                <h1 class="text-2xl font-bold text-black text-nowrap">Events & Activities
+            <div
+                class="flex flex-col md:flex-row gap-2 items-center justify-between">
+                <h1 class="text-2xl font-bold text-black text-nowrap">Events &
+                    Activities
                 </h1>
                 <a href="#"
                     class="text-blue-500 font-semibold underline text-xl">View
@@ -764,11 +779,15 @@
 
         <!-- parent Quiz -->
         <div class="px-10 py-15">
-            <div class="w-full lg:w-[90%] mx-auto flex  flex-col  items-center justify-center gap-8 border rounded-3xl py-5 px-8 border-black/20">
+            <div
+                class="w-full lg:w-[90%] mx-auto flex  flex-col  items-center justify-center gap-8 border rounded-3xl py-5 px-8 border-black/20">
 
-                <h1 class="text-3xl lg:text-5xl font-bold">Parents Quick Quiz</h1>
+                <h1 class="text-2xl lg:text-5xl font-bold">Parents Quick
+                    Quiz</h1>
 
-                <button class="bg-purple-900 text-white px-8 py-4 rounded-lg cursor-pointer">View Details</button>
+                <button
+                    class="bg-purple-900 text-white px-8 py-4 rounded-lg cursor-pointer">View
+                    Details</button>
 
             </div>
         </div>
