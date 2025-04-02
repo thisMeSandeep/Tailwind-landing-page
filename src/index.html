@@ -3,20 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link rel="stylesheet" href="index.css">
-        <style>
-            button{
-                cursor: pointer;
-            }
-           .hide-scrollbar::-webkit-scrollbar {
-  display: none;
-}
+        <link rel="stylesheet" href="style.css">
 
-.hide-scrollbar {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
-}
-        </style>
         <title>9-to-9 School</title>
     </head>
     <body>
@@ -43,7 +39,7 @@
 
         <!-- hero section -->
         <main
-            class="px-5 md:px-10 py-20 bg-blue-900 flex flex-col lg:flex-row items-center justify-center gap-36">
+            class="px-10 py-20 bg-blue-900 flex flex-col lg:flex-row items-center justify-center gap-36">
 
             <section class="w-full lg:w-1/2">
                 <span class="bg-white rounded-full text-black px-5 py-2">Welcome
@@ -70,15 +66,20 @@
                 </div>
             </section>
 
-            <section class="flex justify-center w-full lg:w-1/2">
-                <img src="./assets/iPhone 19.png" alt="Mobile App UI" />
+            <section
+                class=" swiper-container  w-full lg:w-1/2 overflow-hidden">
+                <div class="swiper-wrapper">
+                    <img src="./assets/iPhone 19.png" alt="Mobile App UI" class="swiper-slide "/>
+                    <img src="./assets/iPhone 19.png" alt="Mobile App UI" class="swiper-slide "/>
+                    <img src="./assets/iPhone 19.png" alt="Mobile App UI" class="swiper-slide "/>
+                </div>
             </section>
 
         </main>
 
         <!-- pre school -->
         <main
-            class="px-15 py-10 flex flex-col items-center lg:flex-row justify-between gap-10">
+            class="px-10 py-20  flex flex-col items-center lg:flex-row justify-between gap-10">
             <div
                 class="w-full max-w-sm flex flex-col items-center gap-3 shadow-md pb-4 rounded-2xl border-2 border-gray-300">
                 <img src="./assets/child-group-1.png"
@@ -777,6 +778,8 @@
 
         </main>
 
+        <!-- FAQ -->
+
         <!-- parent Quiz -->
         <div class="px-10 py-15">
             <div
@@ -792,5 +795,8 @@
             </div>
         </div>
 
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
