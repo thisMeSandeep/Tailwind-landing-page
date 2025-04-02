@@ -15,3 +15,22 @@ let swiper = new Swiper(".swiper-container", {
     slideShadows: true,
   },
 });
+
+// faq
+const questions = document.querySelectorAll(".ques");
+
+questions.forEach((question) => {
+  question.addEventListener("click", function () {
+    const answer = this.nextElementSibling;
+    const arrow = this.querySelector(".arrow");
+
+    // Toggle answer display
+    if (answer.classList.contains("open")) {
+      answer.classList.remove("open");
+      arrow.style.transform = "rotate(0deg)";
+    } else {
+      answer.classList.add("open");
+      arrow.style.transform = "rotate(180deg)";
+    }
+  });
+});

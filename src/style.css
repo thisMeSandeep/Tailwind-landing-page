@@ -1,28 +1,41 @@
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
 .hide-scrollbar::-webkit-scrollbar {
-display: none;
+  display: none;
 }
 
 .hide-scrollbar {
--ms-overflow-style: none; 
-scrollbar-width: none; 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.swiper-slide{
-    width: 300px;
-    object-fit: cover;
+.swiper-slide {
+  width: 300px;
+  object-fit: cover;
 }
 
-@media screen and (max-width: 768px){
-    .swiper-slide{
-        width: 150px;
-    }
+.arrow {
+  transition: transform 0.5s ease;
 }
 
-@media screen and (min-width: 76p9x) and (max-width:960px){
-    .swiper-slide{
-        width: 200px;
-    }
+.ans {
+  height: 0;
+  overflow: hidden;
+}
+
+.ans.open {
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-slide {
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 76p9x) and (max-width: 960px) {
+  .swiper-slide {
+    width: 200px;
+  }
 }
